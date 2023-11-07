@@ -2,9 +2,9 @@
 require "Conta.php";
 require "Cliente.php";
 
-$conta = new Conta("157","Sayra Goncales","239,00");
-$cliente = new Cliente("0010","Sayra Goncales","3468516",$conta);
+$conta = new Conta(157,"Sayra Gonçales",239,00);
+$cliente = new Cliente(0010,"Sayra Gonçales","3468516",$conta);
 
 
 echo "---------------------".PHP_EOL;
-echo $cliente->exibirConta()->exibirCodigo();
+var_dump($cliente->exibirConta()->retornarNumero());

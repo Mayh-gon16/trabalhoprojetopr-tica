@@ -1,6 +1,6 @@
 <?php
 class Cliente{
-    private string $codigo;
+    private int $codigo;
     private string $nome;
     private string $senha;
     private Conta $conta;
@@ -12,7 +12,7 @@ class Cliente{
         $this->definirConta($conta);
     }
 
-    public function definirCodigo(string $codigo){
+    public function definirCodigo(int $codigo){
         $this->codigo = $codigo;
     }
 

@@ -5,18 +5,18 @@ class Conta{
     private $nome;
     private $saldo;
 
-    function __construct($numero,$nome,$saldo){ 
+    function __construct(int $numero,string $nome, float $saldo){ 
         $this->definirNumero($numero); 
         $this->definirNome($nome); 
         $this->definirSaldo($saldo); 
     }
 
-    public function definirNumero($vlr){$this->numero = $vlr;} 
-    public function retornarNumero(){return $this->numero.PHP_EOL;} 
-    public function definirNome($vlr){$this->nome = $vlr;} 
-    public function retornarNome(){return $this->nome.PHP_EOL;} 
-    public function definirSaldo($vlr){$this->saldo = $vlr;} 
-    public function retornarSaldo(){return 'R$'.$this->saldo.PHP_EOL;}
+    public function definirNumero($numero){$this->numero = $numero;} 
+    public function retornarNumero(){return $this->numero;} 
+    public function definirNome($nome){$this->nome = $nome;} 
+    public function retornarNome(){return $this->nome ;} 
+    public function definirSaldo($saldo){$this->saldo = $saldo;} 
+    public function retornarSaldo(){return $this->saldo ;}
 
     public function retornarConta(){ 
         $this->retornarNumero(); 
